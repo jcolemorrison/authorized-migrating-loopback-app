@@ -1,0 +1,27 @@
+version: '2'
+
+services:
+  api:
+    environment:
+      NODE_ENV: development
+    image: vpcity/api-dev-2
+    ports:
+      - 3002:3000
+    volumes:
+      - .:/usr/src/api
+    command: nodemon .
+
+  mysqlDb:
+    image: vpcity/mysql-dev-2
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${DB_PWD}"
+    ports:
+      - 3306:3306
+    volumes:
+      - vpcitydevdb:/var/lib/mysql
+
+volumes:
+  vpcitydevdb:

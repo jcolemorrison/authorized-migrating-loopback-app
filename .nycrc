@@ -1,0 +1,13 @@
+{
+  "branches": 100,
+  "functions": 100,
+  "lines": 100,
+  "statements": 100,
+  "include": ["server/**/*.js"],
+  "watermarks": {
+    "statements": [85, 100],
+    "lines": [85, 100],
+    "functions": [85, 100],
+    "branches": [85, 100]
+  }
+}
