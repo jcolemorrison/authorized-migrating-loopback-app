@@ -1,5 +1,9 @@
 {
   "loopback-component-explorer": {
-    "mountPath": "/explorer"
+    "mountPath": "/explorer",
+    "apiInfo": {
+      "title": "VPCITY API",
+      "description": "Version 1"
+    }
   }
 }
