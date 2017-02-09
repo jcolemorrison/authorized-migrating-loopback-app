@@ -1,0 +1,19 @@
+{
+  "family": "loopback-api-task-def",
+  "containerDefinitions": [
+    {
+      "name": "loopback-api-task",
+      "portMappings":[
+        {
+          "containerPort": 3000
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {}
+      },
+      "cpu": 500,
+      "memoryReservation": 496
+    }
+  ]
+}
