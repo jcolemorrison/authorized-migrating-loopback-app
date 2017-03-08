@@ -1,5 +1,6 @@
 {
   "initial:before": {
+    "./middleware/ssl-redirect": {},
     "loopback#favicon": {}
   },
   "initial": {
